@@ -77,3 +77,4 @@
 /Users/sarveshkumar/RiderProjects/BlazerDemoApp/BlazerDemoApp/BlazerDemoApp/obj/Debug/net9.0/BlazerDemoApp.pdb
 /Users/sarveshkumar/RiderProjects/BlazerDemoApp/BlazerDemoApp/BlazerDemoApp/obj/Debug/net9.0/BlazerDemoApp.genruntimeconfig.cache
 /Users/sarveshkumar/RiderProjects/BlazerDemoApp/BlazerDemoApp/BlazerDemoApp/obj/Debug/net9.0/ref/BlazerDemoApp.dll
+/Users/sarveshkumar/RiderProjects/BlazerDemoApp/BlazerDemoApp/BlazerDemoApp/obj/Debug/net9.0/BlazerDemoApp.sourcelink.json
