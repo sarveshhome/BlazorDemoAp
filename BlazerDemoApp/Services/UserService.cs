@@ -1,26 +1,19 @@
 using BlazerDemoApp.Models;
-using System.Text.Json;
+using BlazerDemoApp.Repositories;
 
 namespace BlazerDemoApp.Services;
 
 public class UserService
 {
-    private readonly HttpClient _httpClient;
+    private readonly IUserRepository _userRepository;
 
-    public UserService(HttpClient httpClient)
+    public UserService(IUserRepository userRepository)
     {
-        _httpClient = httpClient;
+        _userRepository = userRepository;
     }
 
     public async Task<List<User>> GetUsersAsync()
     {
-        var response = await _httpClient.GetAsync("https://jsonplaceholder.typicode.com/users");
-        response.EnsureSuccessStatusCode();
-        
-        var json = await response.Content.ReadAsStringAsync();
-        return JsonSerializer.Deserialize<List<User>>(json, new JsonSerializerOptions
-        {
-            PropertyNameCaseInsensitive = true
-        }) ?? new List<User>();
+        return await _userRepository.GetUsersAsync();
     }
 }
